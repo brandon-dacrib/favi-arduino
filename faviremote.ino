@@ -95,7 +95,7 @@ void screenDown()
 	setStateWithDelay(transmitPin,1,400);
 	setStateWithDelay(transmitPin,0,200);
 	setStateWithDelay(transmitPin,1,100);
-    setStateWithDelay(transmitPin,0,10000);
+	setStateWithDelay(transmitPin,0,10000);
 	digitalWrite(transmitPin,LOW);
     
     Serial.print("transmitted ScreenDown\n");
