@@ -14,9 +14,9 @@ void loop()
      screenDown();
      delay(10);
      screenDown();
-     delay(10);
-     //screenDown();
-     //delay(1000);
+     delay(10000);
+     //screenUp();
+     //delay(10);
 }
 
 void customDelay(unsigned long time) 
