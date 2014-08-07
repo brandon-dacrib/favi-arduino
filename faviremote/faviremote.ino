@@ -9,21 +9,29 @@ void setup()
 
 void loop()
 {
-      //screen down
-     /*screenDown();
-     delay(10);
+	//screen down
      screenDown();
      delay(10);
      screenDown();
-     delay(10);*/
+     delay(10);
+     screenDown();
+     delay(100000);
 
-     //screen up
+    //screen stop
+    screenStop();
+    delay(10);
+    screenStop();
+    delay(10);
+    screenStop();
+    delay(100000);
+
+	//screen up
      screenUp();
      delay(10);
      screenUp();
      delay(10);
      screenUp();
-     delay(10);
+     delay(100000);
 }
 
 void customDelay(unsigned long time) 
@@ -46,57 +54,157 @@ void setStateWithDelay(int pin, int state,int delayTime)
 void screenUp()
 {
 	Serial.print("transmitting ScreenUp\n");
-
-	setStateWithDelay(transmitPin,1,200);//1
-	setStateWithDelay(transmitPin,0,400);
-	setStateWithDelay(transmitPin,1,500);
-	setStateWithDelay(transmitPin,0,100);
-	setStateWithDelay(transmitPin,1,200);//5
-	setStateWithDelay(transmitPin,0,400);
-	setStateWithDelay(transmitPin,1,500);
-	setStateWithDelay(transmitPin,0,100);
-	setStateWithDelay(transmitPin,1,200);
-	setStateWithDelay(transmitPin,0,400);//10
-	setStateWithDelay(transmitPin,1,200);
-	setStateWithDelay(transmitPin,0,400);
-	setStateWithDelay(transmitPin,1,200);
-	setStateWithDelay(transmitPin,0,400);
-	setStateWithDelay(transmitPin,1,200);//15
-	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,0,44500);
 	setStateWithDelay(transmitPin,1,200);
 	setStateWithDelay(transmitPin,0,400);
 	setStateWithDelay(transmitPin,1,500);
 	setStateWithDelay(transmitPin,0,100);
 	setStateWithDelay(transmitPin,1,200);
-	setStateWithDelay(transmitPin,0,400);//20
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
 	setStateWithDelay(transmitPin,1,400);
 	setStateWithDelay(transmitPin,0,200);
 	setStateWithDelay(transmitPin,1,400);
 	setStateWithDelay(transmitPin,0,200);
-	setStateWithDelay(transmitPin,1,400);//25
+	setStateWithDelay(transmitPin,1,400);
 	setStateWithDelay(transmitPin,0,200);
 	setStateWithDelay(transmitPin,1,100);
 	setStateWithDelay(transmitPin,0,500);
 	setStateWithDelay(transmitPin,1,400);
-	setStateWithDelay(transmitPin,0,200);//30
+	setStateWithDelay(transmitPin,0,200);
+	setStateWithDelay(transmitPin,1,400);
+	setStateWithDelay(transmitPin,0,200);
+	setStateWithDelay(transmitPin,1,400);
+	setStateWithDelay(transmitPin,0,200);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,4600);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,400);
+	setStateWithDelay(transmitPin,0,200);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,400);
+	setStateWithDelay(transmitPin,0,200);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,400);
+	setStateWithDelay(transmitPin,0,200);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
 	setStateWithDelay(transmitPin,1,400);
 	setStateWithDelay(transmitPin,0,200);
 	setStateWithDelay(transmitPin,1,400);
 	setStateWithDelay(transmitPin,0,200);
-	setStateWithDelay(transmitPin,1,200);//35
+	setStateWithDelay(transmitPin,1,400);
+	setStateWithDelay(transmitPin,0,200);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,400);
+	setStateWithDelay(transmitPin,0,200);
+	setStateWithDelay(transmitPin,1,400);
+	setStateWithDelay(transmitPin,0,200);
+	setStateWithDelay(transmitPin,1,400);
+	setStateWithDelay(transmitPin,0,200);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,100);
 	setStateWithDelay(transmitPin,0,500);
 	setStateWithDelay(transmitPin,1,100);
 	setStateWithDelay(transmitPin,0,500);
 	setStateWithDelay(transmitPin,1,100);
-	setStateWithDelay(transmitPin,0,500);//40
-	setStateWithDelay(transmitPin,1,100);
 	setStateWithDelay(transmitPin,0,500);
 	setStateWithDelay(transmitPin,1,100);
 	setStateWithDelay(transmitPin,0,500);
-	setStateWithDelay(transmitPin,1,100);//45
+	setStateWithDelay(transmitPin,1,100);
 	setStateWithDelay(transmitPin,0,500);
-	setStateWithDelay(transmitPin,1,100);//end
-	setStateWithDelay(transmitPin,0,13000);//50
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,4600);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,4600);
 	digitalWrite(transmitPin,LOW);
 
 	Serial.print("transmitted ScreenUp\n");
@@ -153,7 +261,7 @@ void screenDown()
 	setStateWithDelay(transmitPin,1,100);//45
 	setStateWithDelay(transmitPin,0,500);
 	setStateWithDelay(transmitPin,1,100);
-	setStateWithDelay(transmitPin,0,113000);//50
+	setStateWithDelay(transmitPin,0,4600);//50
 	digitalWrite(transmitPin,LOW);
     
     Serial.print("transmitted ScreenDown\n");
@@ -161,6 +269,155 @@ void screenDown()
 
 void screenStop()
 {
-	setStateWithDelay(transmitPin,1,10000);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,400);
+	setStateWithDelay(transmitPin,0,200);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,400);
+	setStateWithDelay(transmitPin,0,200);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,4600);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,400);
+	setStateWithDelay(transmitPin,0,200);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,400);
+	setStateWithDelay(transmitPin,0,200);
+	setStateWithDelay(transmitPin,1,400);
+	setStateWithDelay(transmitPin,0,200);
+	setStateWithDelay(transmitPin,1,400);
+	setStateWithDelay(transmitPin,0,200);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,400);
+	setStateWithDelay(transmitPin,0,200);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,400);
+	setStateWithDelay(transmitPin,0,200);
+	setStateWithDelay(transmitPin,1,400);
+	setStateWithDelay(transmitPin,0,200);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,4600);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,400);
+	setStateWithDelay(transmitPin,0,200);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,400);
+	setStateWithDelay(transmitPin,0,200);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,100);
+	setStateWithDelay(transmitPin,0,500);
+	setStateWithDelay(transmitPin,1,400);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,500);
+	setStateWithDelay(transmitPin,0,100);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,400);
+	setStateWithDelay(transmitPin,1,200);
+	setStateWithDelay(transmitPin,0,4600);
 	digitalWrite(transmitPin,LOW);
 }
