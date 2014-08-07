@@ -9,21 +9,21 @@ void setup()
 
 void loop()
 {
-	//screen down
+      //screen down
+     /*screenDown();
+     delay(10);
      screenDown();
-     delay(100);
+     delay(10);
      screenDown();
-     delay(100);
-     screenDown();
-     delay(10000);
+     delay(10);*/
 
      //screen up
-     /*screenUp();
-     delay(1000);
      screenUp();
-     delay(1000);
+     delay(10);
      screenUp();
-     delay(1000);*/
+     delay(10);
+     screenUp();
+     delay(10);
 }
 
 void customDelay(unsigned long time) 
@@ -153,7 +153,7 @@ void screenDown()
 	setStateWithDelay(transmitPin,1,100);//45
 	setStateWithDelay(transmitPin,0,500);
 	setStateWithDelay(transmitPin,1,100);
-	setStateWithDelay(transmitPin,0,13000);//50
+	setStateWithDelay(transmitPin,0,113000);//50
 	digitalWrite(transmitPin,LOW);
     
     Serial.print("transmitted ScreenDown\n");
