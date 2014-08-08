@@ -10,25 +10,31 @@ void setup()
 void loop()
 {
 	//screen down
-     screenDown();
-     screenDown();
-     screenDown();
-     screenDown();
-     delay(3000);
+    screenDown();
+    screenDown();
+    delay(100);
+    screenDown();
+    screenDown();
+    delay(100);
+    screenDown();
+    screenDown();
+    delay(4600);
 
     //screen stop
     screenStop();
     screenStop();
+    delay(10);
     screenStop();
     screenStop();
-    delay(3000);
+    delay(4600);
 
     //screen up
-     screenUp();
-     screenUp();
-     screenUp();
-     screenUp();
-     delay(3000);
+    screenUp();
+    screenUp();
+    delay(10);
+    screenUp();
+    screenUp();
+    delay(4600);
 }
 
 void customDelay(unsigned long time) 
@@ -401,6 +407,7 @@ setStateWithDelay(transmitPin,0,4600);
 
 void screenStop()
 {
+	Serial.print("transmitting ScreenStop\n");
 	setStateWithDelay(transmitPin,1,100);
 	setStateWithDelay(transmitPin,0,500);
 	setStateWithDelay(transmitPin,1,400);
@@ -552,4 +559,5 @@ void screenStop()
 	setStateWithDelay(transmitPin,1,200);
 	setStateWithDelay(transmitPin,0,4600);
 	digitalWrite(transmitPin,LOW);
+	Serial.print("transmitted ScreenStop\n");
 }
